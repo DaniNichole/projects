@@ -1,0 +1,56 @@
+var win1= Titanium.UI.createWindow({
+	title:'Stopwatch',
+	backgroundColor:'#fff'
+});
+var view1= Ti.UI.createView({
+	top:20,
+	bottom:'50%',
+	left:20,
+	right:'50%',
+});
+win1.add(view1);
+var view2= Ti.UI.createView({
+	top:60,
+	bottom:'20%',
+	left:20,
+	right:'50%',
+});
+win1.add(view2);
+var button1= Ti.UI.createButton({
+	title:'Start',
+	top:10,
+	left:10
+});
+view2.add(button1);
+win1.add(view2)
+var button2= Ti.UI.createButton({
+	title:'Stop',
+	top:40,
+	left:40
+});
+view2.add(button2);
+win1.add(view2)
+var button3= Ti.UI.createButton({
+	title:'Reset',
+	top:90,
+	left:90
+});
+view2.add(button3);
+win1.add(view2)
+
+//timeview
+var view1= Ti.UI.createView({
+	top:20,
+	bottom:'50%',
+	left:20,
+	right:'50%',
+});
+var label= Ti.UI.createview({
+	color:'White',
+	text:"Ready?",
+	Hieght:Ti.UI.SIZE,
+	textAlign:'center',
+});
+view1.add(label);
+win1.add(view1);
+win1.open();
